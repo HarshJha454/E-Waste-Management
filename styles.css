@@ -66,12 +66,13 @@ section {
 
 #importance {
     grid-area: importance;
-    background-color: #ffe5e5;
+    background-color: #7a75bc;
 }
 
 #results {
     grid-area: results;
     background-color: #e5f0ff;
+    margin-bottom: 10%;
 }
 
 footer {
