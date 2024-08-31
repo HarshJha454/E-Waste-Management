@@ -326,3 +326,68 @@ footer {
     font-size: 16px;
     line-height: 1.6;
 }
+.hero-section2 {
+    position: relative;
+    height: 80vh;
+    background: url("public/WhatsApp Image 2024-08-31 at 23.51.54_9f9f7dd4.jpg") no-repeat center center/cover; /* Relative path to the background image */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 50px;
+    color: #ffffff; /* White for text in hero section */
+    overflow: hidden;
+    z-index: 1;
+}
+/* Specific styles for the new section on the Problems page */
+.problems-new-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffffff; /* White background for contrast */
+    color: #333; /* Dark text for readability */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px;
+    margin-bottom: 50px; /* Space below the section */
+}
+
+.problems-new-section .left-half {
+    width: 45%;
+}
+
+.problems-new-section .left-half img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+.problems-new-section .right-half {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.problems-new-section .text-box {
+    background-color: #e0f7fa; /* Light cyan background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out;
+}
+
+.problems-new-section .text-box:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+}
+
+.problems-new-section .text-box h3 {
+    font-size: 24px; /* Larger font size for subheadings */
+    margin-bottom: 15px;
+    color: #00796b; /* Darker teal for subheadings */
+}
+
+.problems-new-section .text-box p {
+    font-size: 16px;
+    line-height: 1.6;
+}
