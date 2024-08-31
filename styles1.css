@@ -1,123 +1,198 @@
-/* Global Styles */
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-/* Header Styles */
-header {
-    background-color: black;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+/* Quiz Container */
+.quiz-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    padding-bottom: 10px;
+/* Question Styling */
+h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+/* Options Styling */
+#options button {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+/* Hover Effects for Options */
+#options button:hover {
+  background-color: #ddd;
+  color: #111;
 }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
+/* Correct Answer Styling */
+#options button.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Incorrect Answer Styling */
+#options button.incorrect {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Next Button */
+#next-btn {
+  margin-top: 30px;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6e8efb;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+#next-btn:hover {
+  background-color: #5673ea;
+}
+
+/* Explanation Styling */
+#explanation {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #666;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #6e8efb;
+}
+
+/* Hidden Element */
+#next-btn.hidden,
+#explanation.hidden {
+  display: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .quiz-container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  #options button {
     font-size: 16px;
+  }
+
+  #next-btn {
+    font-size: 16px;
+  }
 }
 
-/* Main Content Styles */
-main {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    background-color: black;
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Transparent background for header */
+  color: #000000; /* Black text for readability */
+  padding: 20px 40px;
+  z-index: 1000;
 }
 
-#quiz-container {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; /* Transparent background for the navbar */
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Prevent navbar overflow */
 }
 
-#question-container {
-    margin-bottom: 20px;
+.navbar h1 {
+  font-size: 32px; /* Increased font size for better impact */
+  margin: 0;
+  font-weight: bold; /* Make the text bold */
+  text-transform: uppercase;
+  letter-spacing: 3px; /* Increased letter-spacing for a more distinct look */
+  color: white; /* White text for the logo/title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow effect for the navbar title */
 }
 
-.btn-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.navbar nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.navbar nav ul li {
+  margin-left: 30px;
+  position: relative;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+.navbar nav ul li a {
+  color: white; /* White for links */
+  text-decoration: blanchedalmond;
+  font-size: 22px; /* Slightly larger font size for better readability */
+  padding: 40px 20px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  font-weight: bold; /* Make the text bold */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow effect for links */
 }
 
-/* Quiz Option Styles */
-.quiz-options {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
+.navbar nav ul li a:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Slightly lighter hover effect */
+  color: #000000; /* Black text on hover */
 }
 
-.quiz-options li {
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px 0;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.navbar nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff; /* White underline on hover */
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
 }
 
-.quiz-options li:hover {
-    background-color: #e0e0e0;
-}
-
-.quiz-options li.correct {
-    background-color: #28a745; /* Green for correct answers */
-    color: white;
-}
-
-.quiz-options li.incorrect {
-    background-color: #dc3545; /* Red for incorrect answers */
-    color: white;
-}
-
-/* Footer Styles */
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.navbar nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
