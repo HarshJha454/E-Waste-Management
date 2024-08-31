@@ -13,28 +13,44 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="quiz.html">Quiz</a></li>
-                <li><a href="tips.html">Tips and Suggestions</a></li>
+                <li><a href="tips.html">Tips and Ideas</a></li>
                 <li><a href="charts.html">Charts and Graphs</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div id="quiz-container">
-            <div id="question-container">
-                <h2 id="question">Question will appear here</h2>
-                <div id="answer-buttons" class="btn-container">
-                    <!-- Buttons will be generated here -->
-                </div>
+    
+    <!-- Quiz Section -->
+    <section class="quiz-section">
+        <h2>Test Your Knowledge</h2>
+        <div class="quiz-container">
+            <!-- Question 1 -->
+            <div class="quiz-question">
+                <p>Question 1: What is the capital of France?</p>
+                <ul class="quiz-options">
+                    <li data-correct="false">Berlin</li>
+                    <li data-correct="true">Paris</li>
+                    <li data-correct="false">Madrid</li>
+                    <li data-correct="false">Rome</li>
+                </ul>
             </div>
-            <button id="next-btn" class="btn" onclick="nextQuestion()">Next</button>
+
+            <!-- Question 2 -->
+            <div class="quiz-question">
+                <p>Question 2: Which planet is known as the Red Planet?</p>
+                <ul class="quiz-options">
+                    <li data-correct="false">Venus</li>
+                    <li data-correct="true">Mars</li>
+                    <li data-correct="false">Jupiter</li>
+                    <li data-correct="false">Saturn</li>
+                </ul>
+            </div>
+
+            <!-- Add more questions here -->
+
         </div>
-    </main>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 E-Waste Management</p>
-    </footer>
-
-    <script src="quiz.js"></script>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>

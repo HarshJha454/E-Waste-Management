@@ -36,7 +36,7 @@ header nav ul li a {
 
 main {
     padding: 20px;
-    background-color: black;
+    background-color:#e0f7fa;
 }
 
 .tips-section {
@@ -47,7 +47,7 @@ main {
 .tips-section h1 {
     margin-bottom: 2rem;
     font-size: 2.5rem;
-    color: white;
+    color: #00bcd4;
 }
 
 #tips-container {
@@ -69,7 +69,7 @@ main {
     backdrop-filter: blur(10px); /* Apply a blur effect for the glassy look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), /* 3D shadow effect */
                 0 6px 20px rgba(0, 0, 0, 0.19);
-    color: white;
+    color: #00bcd4;
 }
 
 .tip-card:hover {

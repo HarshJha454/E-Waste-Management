@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header Styles */
 header {
     background-color: black;
     color: white;
@@ -34,6 +36,7 @@ header nav ul li a {
     font-size: 16px;
 }
 
+/* Main Content Styles */
 main {
     padding: 20px;
     display: flex;
@@ -77,6 +80,38 @@ main {
     background-color: #0056b3;
 }
 
+/* Quiz Option Styles */
+.quiz-options {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.quiz-options li {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quiz-options li:hover {
+    background-color: #e0e0e0;
+}
+
+.quiz-options li.correct {
+    background-color: #28a745; /* Green for correct answers */
+    color: white;
+}
+
+.quiz-options li.incorrect {
+    background-color: #dc3545; /* Red for incorrect answers */
+    color: white;
+}
+
+/* Footer Styles */
 footer {
     background-color: black;
     color: white;
