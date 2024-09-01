@@ -3,15 +3,116 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-}
-
+}/* Header */
 header {
-    background-color: black;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Transparent background */
+    color: #000000; /* Black text */
+    padding: 20px 40px;
+    z-index: 1000;
 }
 
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly opaque background for subtlety */
+    padding: 10px 20px;
+    border-radius: 8px; /* Slightly rounded corners for a smooth appearance */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent navbar overflow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0.1, 0.1); /* Soft shadow for depth */
+}
+
+/* Navbar Title */
+.navbar h1 {
+    font-size: 32px; /* Consistent font size */
+    margin: 0;
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 3px; /* Slight letter-spacing for clarity */
+    color: white; /* White text */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow for better contrast */
+}
+
+/* Navbar Links */
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Navbar Link Items */
+.navbar nav ul li {
+    margin-left: 30px;
+    position: relative;
+}
+
+/* Navbar Links */
+.navbar nav ul li a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Slightly smaller font for elegance */
+    padding: 10px 15px; /* Consistent padding for link items */
+    transition: all 0.3s ease;
+    border-radius: 5px; /* Rounded corners for links */
+    font-weight: 600; /* Slightly lighter than bold for a refined look */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Soft shadow for links */
+}
+
+/* Hover Effect */
+.navbar nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Soft hover effect */
+    color: #000000; /* Black text on hover */
+}
+
+/* Hover Underline Effect */
+.navbar nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff; /* White underline on hover */
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Navbar Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar h1 {
+        margin-bottom: 20px;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
 header h1 {
     margin: 0;
     padding-bottom: 10px;
@@ -48,6 +149,7 @@ main {
     margin-bottom: 2rem;
     font-size: 2.5rem;
     color: #00bcd4;
+    margin-top: 10%;
 }
 
 #tips-container {

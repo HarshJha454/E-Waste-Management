@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - E-Waste Management Bangalore</title>
+    <link rel="stylesheet" href="styles4.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <div class="navbar">
+          <h1>E-Waste Management</h1>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="charts.html">Current Trends</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li><a href="tips.html">Tips and Ideas</a></li>
+              <li><a href="problems.html">Major Problems</a></li>
+              <li><a href="solutions.html">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <section class="contact-section">
+        <h2>Get in Touch</h2>
+        <form class="contact-form" action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section class="locations-section">
+        <h2>Find E-Waste Disposal Locations in Bangalore</h2>
+        <div id="map"></div> <!-- This is where the map will be displayed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 E-Waste Management Bangalore. All rights reserved.</p>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> <!-- Google Maps API -->
+    <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
