@@ -37,8 +37,8 @@ header {
     font-weight: bold; /* Bold text */
     text-transform: uppercase; /* Uppercase letters */
     letter-spacing: 3px; /* Slight letter-spacing for clarity */
-    color: white; /* White text */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow for better contrast */
+    color: rgb(0, 0, 0); /* White text */
+   
 }
 
 /* Navbar Links */
@@ -57,14 +57,14 @@ header {
 
 /* Navbar Links */
 .navbar nav ul li a {
-    color: white; /* White text */
+    color: rgb(0, 0, 0); /* White text */
     text-decoration: none; /* Remove underline */
     font-size: 20px; /* Slightly smaller font for elegance */
     padding: 10px 15px; /* Consistent padding for link items */
     transition: all 0.3s ease;
     border-radius: 5px; /* Rounded corners for links */
     font-weight: 600; /* Slightly lighter than bold for a refined look */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Soft shadow for links */
+   
 }
 
 /* Hover Effect */
@@ -137,7 +137,7 @@ header nav ul li a {
 
 main {
     padding: 20px;
-    background-color:#e0f7fa;
+    background-color: #e0f7fa; /* Light teal background */
 }
 
 .tips-section {
@@ -171,7 +171,7 @@ main {
     backdrop-filter: blur(10px); /* Apply a blur effect for the glassy look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4), /* 3D shadow effect */
                 0 6px 20px rgba(0, 0, 0, 0.19);
-    color: #00bcd4;
+    color: #000000;
 }
 
 .tip-card:hover {

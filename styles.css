@@ -176,6 +176,7 @@ header {
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
+    margin: 2px;
 }
 
 .info-box:hover {
@@ -221,7 +222,7 @@ header {
 #results h2 {
     font-size: 32px; /* Larger font size for headings */
     margin-bottom: 20px;
-    color: #00bcd4; /* Vibrant cyan for headings */
+    /* Vibrant cyan for headings */
 }
 
 #results p {
@@ -257,7 +258,7 @@ footer {
 .dos h3, .donts h3 {
     font-size: 28px; /* Larger font size for subheadings */
     margin-bottom: 15px;
-    color:s#00bcd4; /* Dark teal color */
+    color:#00bcd4; /* Dark teal color */
 }
 
 .dos ul, .donts ul {
@@ -323,7 +324,7 @@ footer {
 .problems-container {
     padding: 50px 20px;
     background-color: #ffffff; /* White background for contrast */
-    color: #333; /* Dark text for readability */
+    color:#00bcd4; /* Dark text for readability */
 }
 
 .problems-container h2 {
@@ -350,7 +351,7 @@ footer {
 .problem-box h3 {
     font-size: 24px; /* Larger font size for subheadings */
     margin-bottom: 15px;
-    color: #00796b; /* Darker teal for subheadings */
+    color: #00bcd4; /* Darker teal for subheadings */
 }
 
 .problem-box p {
@@ -416,7 +417,7 @@ footer {
 .problems-new-section .text-box h3 {
     font-size: 24px; /* Larger font size for subheadings */
     margin-bottom: 15px;
-    color: #00796b; /* Darker teal for subheadings */
+    color: #00bcd4; /* Darker teal for subheadings */
 }
 
 .problems-new-section .text-box p {

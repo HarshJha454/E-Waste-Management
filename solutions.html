@@ -9,23 +9,24 @@
 <body>
     <header>
         <div class="navbar">
-          <h1>E-Waste Management</h1>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="charts.html">Current Trends</a></li>
-              <li><a href="quiz.html">Quiz</a></li>
-              <li><a href="tips.html">Tips and Ideas</a></li>
-              <li><a href="problems.html">Major Problems</a></li>
-              <li><a href="solutions.html">Contacts</a></li>
-            </ul>
-          </nav>
+            <h1>E-Waste Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="charts.html">Current Trends</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    
+                    <li><a href="problems.html">Major Problems</a></li>
+                    <li><a href="tips.html">Tips and Ideas</a></li>
+                    <li><a href="solutions.html">Contacts</a></li>
+                </ul>
+            </nav>
         </div>
-      </header>
+    </header>
 
     <section class="contact-section">
-        <h2>Get in Touch</h2>
-        <form class="contact-form" action="submit_form.php" method="post">
+        <h2>Get Connected</h2>
+        <form class="contact-form" id="contactForm" onsubmit="sendEmail(event)">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -41,14 +42,40 @@
 
     <section class="locations-section">
         <h2>Find E-Waste Disposal Locations in Bangalore</h2>
-        <div id="map"></div> <!-- This is where the map will be displayed -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.487465156736!2d77.62233671418548!3d12.935204090884503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1444a4602499%3A0xfcbef8e0c6b05429!2sSaahas%20Zero%20Waste%20(Head%20Office)!5e0!3m2!1sen!2sin!4v1693408823825!5m2!1sen!2sin" 
+            width="100%" 
+            height="500" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </section>
 
     <footer>
         <p>&copy; 2024 E-Waste Management Bangalore. All rights reserved.</p>
     </footer>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script> <!-- Google Maps API -->
-    <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
+    <script>
+        // JavaScript function to simulate sending email and showing a popup
+        function sendEmail(event) {
+            event.preventDefault(); // Prevent the form from submitting in the traditional way
+            
+            // Capture form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Simulate an email being sent by logging to console
+            console.log(`Sending email to: harshjha.ec22rvce.edu.in\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+            // Show a popup alert
+            alert('Message sent successfully!');
+
+            // Reset the form fields
+            document.getElementById('contactForm').reset();
+        }
+    </script>
 </body>
 </html>

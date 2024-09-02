@@ -1,7 +1,7 @@
 /* Body Styling */
 body {
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  background-color: #e0f7fa; /* Light teal background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,8 +142,8 @@ header {
   font-weight: bold; /* Make the text bold */
   text-transform: uppercase;
   letter-spacing: 3px; /* Increased letter-spacing for a more distinct look */
-  color: white; /* White text for the logo/title */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow effect for the navbar title */
+  color: rgb(0, 0, 0); /* White text for the logo/title */
+  
 }
 
 .navbar nav ul {
@@ -159,14 +159,14 @@ header {
 }
 
 .navbar nav ul li a {
-  color: white; /* White for links */
+  color: rgb(0, 0, 0); /* White for links */
   text-decoration: blanchedalmond;
   font-size: 22px; /* Slightly larger font size for better readability */
   padding: 40px 20px;
   transition: all 0.3s ease;
   border-radius: 5px;
   font-weight: bold; /* Make the text bold */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow effect for links */
+
 }
 
 .navbar nav ul li a:hover {
